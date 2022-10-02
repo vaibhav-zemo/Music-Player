@@ -6,14 +6,24 @@
 
 /* Body */
 body {
-    background-color: rgb(36, 36, 104);
+    /* background-color: rgb(36, 36, 104); */
+    background: #0f0c29;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #24243e, #302b63, #0f0c29);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
 
-body::-webkit-scrollbar{
+body::-webkit-scrollbar {
     display: none;
 }
 
-p, h2, h3, h1 {
+p,
+h2,
+h3,
+h1 {
     color: white;
 }
 
@@ -146,7 +156,7 @@ main #promotion img {
     transition: 0.5s ease-in-out;
 }
 
-main #promotion img:hover{
+main #promotion img:hover {
     transform: scale(1.12);
 }
 
@@ -187,7 +197,7 @@ main #latest #cards .card {
     visibility: visible;
 } */
 
-.option{
+.option {
     position: absolute;
     background: white;
     z-index: 1;
@@ -197,7 +207,7 @@ main #latest #cards .card {
     visibility: hidden;
 }
 
-.option ul li{
+.option ul li {
     color: black;
     list-style: none;
     border-bottom: 1px solid black;
@@ -206,7 +216,7 @@ main #latest #cards .card {
     display: inline-block;
 }
 
-.option ul li p{
+.option ul li p {
     font-size: 10px;
     color: gray;
     display: inline-block;
@@ -221,22 +231,22 @@ main #latest #cards .card {
 
 main #latest #cards .card img {
     width: 80px;
-    height:80px;
+    height: 80px;
 }
 
-main #latest #cards .card .latest_img:hover p{
+main #latest #cards .card .latest_img:hover p {
     display: block;
 }
 
-main #latest #cards .card .latest_img:hover img{
-     filter: brightness(60%);
+main #latest #cards .card .latest_img:hover img {
+    filter: brightness(60%);
 }
 
-main #latest #cards .card .latest_img{
+main #latest #cards .card .latest_img {
     position: relative;
 }
 
-main #latest #cards .card .latest_img p{
+main #latest #cards .card .latest_img p {
     position: absolute;
     bottom: 37%;
     left: 40%;
@@ -293,7 +303,7 @@ main #stations img {
     opacity: 0.55;
 }
 
-main #stations .st{
+main #stations .st {
     position: relative;
     /* background-color: blueviolet; */
     width: 120px;
@@ -303,35 +313,39 @@ main #stations .st{
     /* opacity: 0.65; */
 }
 
-main #stations .one::after{
+main #stations .one::after {
     content: 'Pop';
     color: white;
     position: absolute;
     left: 39%;
     top: 42%;
 }
-main #stations .two::after{
+
+main #stations .two::after {
     content: 'Hip Hop';
     color: white;
     position: absolute;
     left: 30%;
     top: 42%;
 }
-main #stations .three::after{
+
+main #stations .three::after {
     content: 'Country';
     color: white;
     position: absolute;
     left: 30%;
     top: 42%;
 }
-main #stations .four::after{
+
+main #stations .four::after {
     content: 'Classical';
     color: white;
     position: absolute;
     left: 30%;
     top: 42%;
 }
-main #stations .five::after{
+
+main #stations .five::after {
     content: 'Electronic';
     color: white;
     position: absolute;
@@ -402,7 +416,7 @@ main #category .box {
     overflow: hidden;
 }
 
-main #category .one::after{
+main #category .one::after {
     content: '';
     background: url(./img/best-reggae-songs-featured-1024x652.jpg) no-repeat center center/cover;
     position: absolute;
@@ -411,11 +425,11 @@ main #category .one::after{
     opacity: 0.6;
 }
 
-main #category .one:hover::after{
+main #category .one:hover::after {
     transform: scale(1.1);
 }
 
-main #category .one::before{
+main #category .one::before {
     content: 'Reggae';
     font-size: 20px;
     position: absolute;
@@ -426,7 +440,7 @@ main #category .one::before{
     z-index: 1;
 }
 
-main #category .two::after{
+main #category .two::after {
     content: '';
     background: url(./img/folk-music-1024x682.jpg) no-repeat center center/cover;
     position: absolute;
@@ -435,7 +449,7 @@ main #category .two::after{
     opacity: 0.7;
 }
 
-main #category .two::before{
+main #category .two::before {
     content: 'Flok';
     font-size: 20px;
     position: absolute;
@@ -446,11 +460,11 @@ main #category .two::before{
     z-index: 1;
 }
 
-main #category .two:hover::after{
+main #category .two:hover::after {
     transform: scale(1.1);
 }
 
-main #category .three::after{
+main #category .three::after {
     content: '';
     background: url(./img/jazz-music-saxophone-1024x682.jpg) no-repeat center center/cover;
     position: absolute;
@@ -459,11 +473,11 @@ main #category .three::after{
     opacity: 0.7;
 }
 
-main #category .three:hover::after{
+main #category .three:hover::after {
     transform: scale(1.1);
 }
 
-main #category .three::before{
+main #category .three::before {
     content: 'Jazz';
     font-size: 20px;
     position: absolute;
@@ -474,7 +488,7 @@ main #category .three::before{
     z-index: 1;
 }
 
-main #category img:hover{
+main #category img:hover {
     transform: scale(1.1);
 }
 
@@ -525,20 +539,20 @@ aside {
     right: 19%;
 }
 
-aside #heading .arrow p{
+aside #heading .arrow p {
     color: cyan;
     margin-left: 25px;
 }
 
-aside #heading .arrow{
+aside #heading .arrow {
     position: relative;
 }
 
-aside #heading .arrow:hover .list{
+aside #heading .arrow:hover .list {
     visibility: visible;
 }
 
-aside #heading .arrow .list{
+aside #heading .arrow .list {
     position: absolute;
     background: white;
     z-index: 1;
@@ -548,7 +562,7 @@ aside #heading .arrow .list{
 }
 
 
-aside #heading .arrow .list ul li{
+aside #heading .arrow .list ul li {
     color: black;
     list-style: none;
     width: 138px;
@@ -558,7 +572,7 @@ aside #heading .arrow .list ul li{
 }
 
 
-aside #heading .arrow .list ul li:first-child{
+aside #heading .arrow .list ul li:first-child {
     border-bottom: 1px solid black;
 }
 
@@ -570,7 +584,7 @@ aside #songs {
     overflow: scroll;
 }
 
-aside #songs::-webkit-scrollbar{
+aside #songs::-webkit-scrollbar {
     display: none;
 }
 
@@ -618,7 +632,7 @@ aside #songs .item .heart {
 
 /* Footer */
 
-footer .audio{
+footer .audio {
     width: 100vw;
     height: 50px;
     position: fixed;
@@ -629,9 +643,9 @@ footer .audio{
     /* padding: auto; */
 }
 
-footer .audio audio{
+footer .audio audio {
     height: 40px;
     margin-left: 40%;
     border: none;
-    
+
 }
